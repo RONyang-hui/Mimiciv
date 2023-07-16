@@ -17,7 +17,7 @@ CREATE SCHEMA mimiciv;
 set search_path to mimiciv;
 
 ## 在架构下创建表
-\i E:/mimic-code-main/mimic-iv/buildmimic/postgres/create.sql
+\i F:/Mimic/mimic-code/mimic-iv/buildmimic/postgres/create.sql
 
 ## 出现任何错误时停止执行
 \set ON_ERROR_STOP 1
