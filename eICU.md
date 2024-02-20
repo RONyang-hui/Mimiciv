@@ -8,7 +8,7 @@
 CREATE DATABASE EICU OWNER postgres;
 
 ## 连接到mimic数据库
-\c eicu 
+\c eicu; 
 
 ## 创建用于保存数据库的模式
 CREATE SCHEMA eicuiii;
@@ -17,15 +17,15 @@ CREATE SCHEMA eicuiii;
 set search_path to eicuiii;
 
 ## 在架构下创建表
-\i F:/Mimic/eicu-code/build-db/postgres/postgres_create_tables.sql
+\i E:/Mimic/eicu-code/build-db/postgres/postgres_create_tables.sql
 
 ## 出现任何错误时停止执行
 \set ON_ERROR_STOP 1
 
 ## 此命令指定包含数据的文件夹
 
-\set datadir 'F:/eicu-collaborative-research-database-2.0'
-\i 'F:/Mimic/eicu-code/build-db/postgres/postgres_load_data_7z.sql'
+\set datadir 'E:/eicu-collaborative-research-database-2.0'
+\i 'E:/Mimic/eicu-code/build-db/postgres/postgres_load_data_7z.sql'
 
 
 
@@ -33,9 +33,9 @@ set search_path to eicuiii;
 ## mimiciv=# \encoding 'UTF8'
 
 ## 索引
-\i F:/Mimic/eicu-code/build-db/postgres/postgres_add_indexes.sql
+\i E:/Mimic/eicu-code/build-db/postgres/postgres_add_indexes.sql
 
-\i F:/Mimic/eicu-code/build-db/postgres/postgres_checks.sql
+\i E:/Mimic/eicu-code/build-db/postgres/postgres_checks.sql
 
 
 ## 示例
